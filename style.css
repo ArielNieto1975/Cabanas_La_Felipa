@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  /* seteo de estilos */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #304c5a;
+}
+.banner,
+.banner2 {
+  height: calc(
+    100vh - 85px
+  ); /* asignamos al banner un alto del 100% del alto de la pantalla menos la barra del header */
+  width: 100vw;
+  background-size: cover;
+  background-image: url("./assets/banner.jpeg");
+  background-position: center;
+}
+.banner {
+  background-attachment: fixed; /* fijamos la imagen para que no se mueva al hacer scroll */
+  position: relative;
+}
+.banner2 {
+  display: none;
+}
+.banner__titulo {
+  font-family: "Architects Daughter", cursive;
+  font-size: 3.5vw;
+  color: #ffc000;
+  text-shadow: 0 0 5px #000000;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff8;
+  padding: 20px;
+  border-radius: 10px;
+}
+.banner__titulo:hover {
+  background-color: #fffa;
+  transition: 0.5s all ease;
+}
+.banner__subtitulo {
+  font-family: "Anton", sans-serif;
+  font-size: 3vw;
+  color: #ffc000;
+  text-shadow: 0 0 10px #000000;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30%;
+}
+
+.header1 {
+  background-color: rgb(12, 11, 11);
+  /*background-color: #304c5a;*/
+  height: 70px;
+  padding-top: 10px;
+  /* fijamos el header para que no desaparezca al bajar en la pagina */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav__menu1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav__menu__item1 {
+  list-style: none;
+}
+
+.nav__menu__item1 a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #fff;
+  border: 1px solid transparent;
+  outline: none;
+
+  padding: 10px 0;
+  border-radius: 5px;
+}
+/* .submenu1 {
+  display: none;
+  position: relative;
+  top: -90px;
+  z-index: -2;
+  transition: 0.5s all ease;
+  background-color: rgb(78, 76, 76);
+}
+.subitem1 {
+  text-align: center;
+} */
+
+#menu,
+.bi-list {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #ffffff;
+}
+
+.nav__menu__item1 a:hover {
+  color: rgb(226, 8, 8);
+  transition: 0.4s all;
+}
+.nav__menu__item1:hover .submenu1 {
+  display: block;
+  top: 8px;
+  z-index: 0;
+}
+
+/* Estilos nav responsive */
+.menu__title {
+  display: none;
+  font-family: "Architects Daughter", cursive;
+  font-size: 5vw;
+  color: #ffc000;
+  text-align: center;
+  margin-top: 15px;
+}
+.nav__menu__resp1 {
+  display: none;
+  list-style: none;
+  background-color: rgb(12, 11, 11);
+  /* color: #fff; */
+  text-align: center;
+  height: 100vh;
+}
+.nav__menu__item1__resp {
+  border: 1px solid rgb(226, 8, 8);
+  padding: 15px 0;
+}
+
+.nav__menu__item1__resp a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.nav__menu__item1__resp a:hover {
+  display: block;
+  color: rgb(226, 8, 8);
+  transition: 0.4s all;
+}
+
+.contact {
+  background-color: #f8e42e;
+  margin-top: 5px;
+  height: 50%;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.contact a {
+  color: #000000;
+  padding: 0;
+  font-size: 1.2rem;
+}
+.contact svg {
+  margin: 5px 0 0 5px;
+}
+
+.whats {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+  padding-bottom: 30px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+}
+.whats a img:hover {
+  filter: drop-shadow(2px 1px 10px #37f337);
+  transform: scale(1.1);
+}
+#up {
+  margin-bottom: 30px;
+  filter: drop-shadow(0 0 1px #000);
+}
+#up:hover {
+  filter: drop-shadow(2px 1px 10px #4323f8);
+  transform: scale(1.1);
+}
+#localiza {
+  margin-bottom: 25vh;
+  filter: drop-shadow(0 0 10px #fff);
+}
+
+.intro {
+  width: 80%;
+  margin: 30px auto;
+  padding: 50px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.intro__img {
+  max-height: 300px;
+}
+.intro img {
+  width: 40%;
+  min-width: 300px;
+  min-height: 180px;
+  height: 40%;
+  float: left;
+  padding: 0 50px 10px 0;
+}
+.cabanas,
+.ubicacion, 
+.gallery, 
+.servicios {
+  width: 80%;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.cabanas__container {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px auto;
+  justify-content: space-evenly;
+}
+.cabanas h2,
+.cabanas p {
+  text-align: center;
+}
+.cabanas__card {
+  width: 400px;
+  height: 500px;
+
+  overflow: hidden;
+  position: relative;
+}
+.cabanas__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cabana__info {
+  width: 100%;
+  height: 100%;
+  background-color: #fff5;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 100%;
+  transition: 0.5s all ease;
+}
+.cabana__info p {
+  display: inline-block;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+.cabanas__card img:hover ~ .cabana__info,
+.cabana__info:hover {
+  top: 0%;
+  z-index: 0;
+}
+
+.ubicacion {
+  display: flex;
+}
+.ubicacion__map {
+  box-shadow: 0 0 15px grey;
+  border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+  .cabanas__card {
+    width: 300px;
+    height: 375px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bi-list {
+    display: block;
+  }
+  .menu__title {
+    display: block;
+  }
+  .header1 {
+    min-height: 65px;
+    height: auto;
+  }
+  .banner,
+  .nav__menu1 {
+    /* Ocultamos el banner */
+    display: none;
+  }
+  .banner2 {
+    display: block;
+    height: 50vh;
+  }
+  #menu:checked ~ .nav__menu__resp1 {
+    display: block;
+    padding-top: 60px;
+    z-index: 100;
+  }
+  .intro {
+    display: none;
+  }
+  #up {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .cabanas {
+    width: 85%;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  .cabanas__container {
+    gap: 20px;
+  }
+  .cabanas__card {
+    width: 80vw;
+    height: 100vw;
+  }
+}
