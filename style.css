@@ -68,6 +68,7 @@ body {
 .nav__menu1 {
   display: flex;
   justify-content: space-evenly;
+  padding: 0;
 }
 .nav__menu__item1 {
   list-style: none;
