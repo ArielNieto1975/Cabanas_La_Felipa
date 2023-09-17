@@ -7,6 +7,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+:root{
+  width: 100vw;
+}
 body {
   background-color: #304c5a;
 }
@@ -15,7 +18,7 @@ body {
   height: calc(
     100vh - 55px
   ); /* asignamos al banner un alto del 100% del alto de la pantalla menos la barra del header */
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   background-image: url("./assets/banner.jpeg");
   background-position: center;
