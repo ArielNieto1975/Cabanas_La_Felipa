@@ -1,6 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 .gallery {
   width: 90%;
-  margin: 5 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
