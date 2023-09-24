@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="es">
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -9,101 +10,70 @@
     <!-- googleFont -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet" />
     <!-- fin googleFont -->
-    <title>Cabañas La Felipa - Contacto</title>
+    <title>Contacto</title>
     <!-- <link rel="stylesheet" href="../css/giramenu.css" /> -->
-  </head>
-  <body>
+    
+</head>
+
+<body>
     <header class="header1">
-      <nav class="nav">
-        <ul class="nav__menu1">
-          <li class="nav__menu__item1"><a href="../index.html">Home</a></li>
+        <nav class="nav">
+            <ul class="nav__menu1">
+                <li class="nav__menu__item1"><a href="../index.html">Home</a></li>
+                <li class="nav__menu__item1"><a href="./cabanas.html">Cabañas</a></li>
+                <li class="nav__menu__item1"><a href="./galeria.html">Galeria</a></li>
+                <li class="nav__menu__item1"><a href="tarifas.html">Tarifas</a></li>
+                <li class="nav__menu__item1 contact"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
 
-          <li class="nav__menu__item1"><a href="./cabanas.html">Cabañas</a></li>
-          <li class="nav__menu__item1"><a href="./galeria.html">Galeria</a></li>
-          <li class="nav__menu__item1"><a href="">Tarifas</a></li>
-          <li class="nav__menu__item1 contact">
-
-            <a href="./contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-
-      <menu>
-        <span class="menu__title">CABAÑAS "LA FELIPA" </span>
-        <label for="menu">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            fill="currentColor"
-            class="bi bi-list"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-            />
-          </svg>
-        </label>
-        <input id="menu" type="checkbox" style="box-shadow: 0 0 15px red;" />
-        <ul class="nav__menu__resp1">
-          <li class="nav__menu__item1__resp">
-            <a href="../index.html">Home</a>
-          </li>
-          <li class="nav__menu__item1__resp">
-            <a href="./cabanas.html">Cabañas</a>
-          </li>
-
-          <li class="nav__menu__item1__resp">
-            <a href="./galeria.html">Galeria</a>
-          </li>
-          <li class="nav__menu__item1__resp"><a href="">Tarifas</a></li>
-          <li class="nav__menu__item1__resp"><a href="">Contacto</a></li>
-        </ul>
-      </menu>
+        <menu>
+            <span class="menu__title">CABAÑAS "LA FELIPA" </span>
+            <label for="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </label>
+            <input id="menu" type="checkbox" style="box-shadow: 0 0 15px red;" />
+            <ul class="nav__menu__resp1">
+                <li class="nav__menu__item1__resp"><a href="../index.html">Home</a></li>
+                <li class="nav__menu__item1__resp"><a href="./cabanas.html">Cabañas</a></li>
+                <li class="nav__menu__item1__resp"><a href="./galeria.html">Galeria</a></li>
+                <li class="nav__menu__item1__resp"><a href="tarifas.html">Tarifas</a></li>
+                <li class="nav__menu__item1__resp"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </menu>
     </header>
 
     <main>
-      <form class="formulario" action="">
-        <h1>Contáctenos</h1>
-        <section class="formulario__form">
-          <div class="formulario__form-item">
-            <label for="name">Nombre:</label>
-            <input name="name" id="name" type="text" required />
-          </div>
-          <div class="formulario__form-item">
-            <label for="email">Email:</label>
-            <input name="email" id="email" type="email" required />
-          </div>
-          <div class="formulario__form-item">
-            <label for="telefono">Telefono:</label>
-            <input
-              name="telefono"
-              id="telefono"
-              type="tel"
-              required
-              pattern="^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$"
-            />
-          </div>
-        </section>
+        <form class="formulario" action="https://formspree.io/f/mleypzpq" method="POST">
+            <h1>Contáctenos</h1>
+            <section class="formulario__form">
+                <div class="formulario__form-item">
+                    <label for="name">Nombre:</label>
+                    <input name="name" id="name" type="text" value="" />
+                </div>
+                <div class="formulario__form-item">
+                    <label for="email">Email:</label>
+                    <input name="email" id="email" type="email" value="" placeholder="nombre@ejemplo.com" required />
+                </div>
+                <div class="formulario__form-item">
+                    <label for="telefono">Telefono:</label>
+                    <input name="telefono" id="telefono" type="tel" value=""
+                    placeholder="5491144440000" required />
+                </div>
+            </section>
 
-        <section class="formulario__form form-ta">
-          <label for="consulta">Ingrese su consulta:</label>
-          <textarea
-            name="consulta"
-            id="consulta"
-            cols="30"
-            rows="10"
-            required
-          ></textarea>
-          <input type="submit" value="Enviar" class="enviar" />
-        </section>
-      </form>
+            <section class="formulario__form form-ta">
+                <label for="message">Ingrese su consulta:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="" required></textarea>
+                <input type="submit" value="Enviar" class="enviar" />
+            </section>
+        </form>
     </main>
     <footer class="footer">
       <div class="redes">
@@ -147,5 +117,6 @@
       </div>
       <p class="copy">2023 &copy; Canañas La Felipa - All rights reserved.</p>
     </footer>
+    <script src="../js/contacto.js"></script>
   </body>
 </html>
