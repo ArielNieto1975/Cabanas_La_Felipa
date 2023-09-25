@@ -417,6 +417,14 @@ body {
 @media (max-width: 425px) {
   .intro{
     text-align: justify;
+    width: 90%;
+    padding: 20px;
+  }
+  .opinion, .ubicacion{
+    width: 90%;
+  }
+  #localiza{
+    display: none;
   }
   .cabanas {
     width: 85%;
