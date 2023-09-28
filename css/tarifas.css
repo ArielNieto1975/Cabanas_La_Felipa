@@ -19,6 +19,7 @@
   text-shadow: 0 0 10px #000000;
   text-align: center;
   margin-top: 30px;
+  letter-spacing: 3px;
 }
 @media (max-width: 1024px) {
   .gallery_title {
@@ -29,4 +30,9 @@
   .gallery_title {
     font-size: 4vw;
   }
+  @media (max-width: 600px) {
+    .gallery_title {
+      font-size: 7vw;
+    }
+}
 }
