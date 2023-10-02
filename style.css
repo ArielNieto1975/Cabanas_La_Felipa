@@ -55,7 +55,7 @@ body {
 }
 
 .header1 {
-  background-color: rgb(12, 11, 11);
+  background-color: #0c0b0b;
   height: 55px;
   padding-top: 5px;
   /* fijamos el header para que no desaparezca al bajar en la pagina */
@@ -95,7 +95,7 @@ body {
 }
 
 .nav__menu__item1 a:hover {
-  color: rgb(226, 8, 8);
+  color: #e20808;
   transition: 0.4s all;
 }
 .nav__menu__item1:hover .submenu1 {
@@ -116,13 +116,13 @@ body {
 .nav__menu__resp1 {
   display: none;
   list-style: none;
-  background-color: rgb(12, 11, 11);
+  background-color: #0c0b0b;
   /* color: #fff; */
   text-align: center;
   height: 100vh;
 }
 .nav__menu__item1__resp {
-  border: 1px solid rgb(226, 8, 8);
+  border: 1px solid #e20808;
   padding: 15px 0;
 }
 
@@ -134,7 +134,7 @@ body {
 
 .nav__menu__item1__resp a:hover {
   display: block;
-  color: rgb(226, 8, 8);
+  color: #e20808;
   transition: 0.4s all;
 }
 
@@ -183,10 +183,10 @@ body {
 }
 
 .intro {
-  width: 80%;
+  width: 90%;
   margin: 30px auto;
   padding: 50px;
-  background-color: #fff;
+  background-color: #faf5ed;
   overflow: hidden;
 }
 .intro__img {
@@ -205,11 +205,11 @@ body {
 .gallery, 
 .servicios,
 .opinion {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: 50px auto;
   padding: 50px;
-  background-color: #fff;
+  background-color: #faf5ed;
   overflow: hidden;
 }
 
@@ -285,20 +285,20 @@ body {
 .cabana__info {
   width: 100%;
   height: 100%;
-  background-color: #fff5;
+  background-color: #fff9;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  text-shadow: 0 0 #000000;
   position: absolute;
   top: 100%;
   transition: 0.5s all ease;
 }
 .cabana__info p {
   display: inline-block;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
   padding: 5px;
   margin: 0 10px;
 }
@@ -343,7 +343,7 @@ body {
 }
 
 .footer {
-  background-color: rgb(12, 11, 11);
+  background-color: #0c0b0b;
   padding: 20px;
   display: flex;
   flex-direction: column;
