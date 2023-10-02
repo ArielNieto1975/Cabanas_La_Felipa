@@ -309,6 +309,31 @@ body {
   z-index: 0;
 }
 
+.servicios {
+  text-align: center;
+}
+
+.servicios_list {
+  text-align: justify;
+  column-count: 2; 
+  column-gap: 30px; 
+  list-style-type: none;
+  padding: 0; 
+  line-height: 1.5;
+  margin-top: 10px
+}
+
+.servicios_list li {
+  margin-bottom: 10px; 
+  display: flex; 
+  align-items: center; 
+}
+
+.servicios_list li img {
+  vertical-align: middle; 
+  margin-right: 10px; 
+}
+
 .ubicacion {
   display: flex;
 }

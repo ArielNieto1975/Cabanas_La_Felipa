@@ -1,12 +1,9 @@
-const name = document.getElementById("name");
-name.value = "";
-const email = document.getElementById("email");
-email.value = "";
-const telefono = document.getElementById("telefono");
-telefono.value = "";
-const consultaTextarea = document.getElementById("message");
-consultaTextarea.value = "";
-
+window.addEventListener('pageshow', () => {
+    document.getElementById('name').value = '';
+    document.getElementById("email").value = '';
+    document.getElementById("telefono").value = '';
+    document.getElementById("message").value = '';
+});
 /**
  * Valida un formulario de contacto y muestra alertas si los campos no son válidos.
  * @returns {boolean} Verdadero si el formulario es válido, falso si no lo es.
