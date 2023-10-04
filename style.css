@@ -180,9 +180,10 @@ body {
 .intro {
   width: 90%;
   margin: 30px auto;
-  padding: 50px;
+  padding: 40px;
   background-color: #faf5ed;
   overflow: hidden;
+  border-radius: 5px;
 }
 .intro__img {
   max-height: 300px;
