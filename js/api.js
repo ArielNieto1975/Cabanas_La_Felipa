@@ -1,6 +1,8 @@
 const API_KEY = '3ddea520b50e1e9f35af8b57e4807dbe';
-const lat = -32.0771493;
-const lon = -64.5809998;
+// const lat = -32.0771493; // Departamento de Calamuchita
+const lat = -31.898333333333; // La Cumbrecita
+// const lon = -64.5809998; // Departamento de Calamuchita
+const lon =  -64.773333333333; // La Cumbrecita
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric&lang=sp`;
 
 async function getWeather() {
@@ -26,5 +28,8 @@ async function getWeather() {
 
 getWeather();
 
-
+// Departamento de Calamuchita
 // https://api.openweathermap.org/data/2.5/weather?lat=-32.0771493&lon=-64.5809998&appid=3ddea520b50e1e9f35af8b57e4807dbe&units=metric&lang=sp
+
+// La Cumbrecita
+// https://api.openweathermap.org/data/2.5/weather?lat=-31.898333333333&lon=-64.773333333333&appid=3ddea520b50e1e9f35af8b57e4807dbe&units=metric&lang=sp

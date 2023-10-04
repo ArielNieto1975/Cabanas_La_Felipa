@@ -1,46 +1,46 @@
 {
     "coord": {
-        "lon": -64.581,
-        "lat": -32.0771
+        "lon": -64.7733,
+        "lat": -31.8983
     },
     "weather": [
         {
-            "id": 801,
-            "main": "Clouds",
-            "description": "algo de nubes",
-            "icon": "02n"
+            "id": 800,
+            "main": "Clear",
+            "description": "cielo claro",
+            "icon": "01n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 6.55,
-        "feels_like": 5.45,
-        "temp_min": 5.8,
-        "temp_max": 6.55,
-        "pressure": 1019,
-        "humidity": 10,
-        "sea_level": 1019,
-        "grnd_level": 943
+        "temp": 13.72,
+        "feels_like": 12.27,
+        "temp_min": 11.24,
+        "temp_max": 13.72,
+        "pressure": 1014,
+        "humidity": 43,
+        "sea_level": 1014,
+        "grnd_level": 860
     },
     "visibility": 10000,
     "wind": {
-        "speed": 1.73,
-        "deg": 269,
-        "gust": 1.71
+        "speed": 1.61,
+        "deg": 55,
+        "gust": 1.99
     },
     "clouds": {
-        "all": 14
+        "all": 1
     },
-    "dt": 1696411009,
+    "dt": 1696459643,
     "sys": {
         "type": 2,
-        "id": 2034100,
+        "id": 2086764,
         "country": "AR",
-        "sunrise": 1696413137,
-        "sunset": 1696458104
+        "sunrise": 1696413188,
+        "sunset": 1696458145
     },
     "timezone": -10800,
-    "id": 3835943,
-    "name": "Santa Rosa de Calamuchita",
+    "id": 7304381,
+    "name": "Villa Berna",
     "cod": 200
 }
