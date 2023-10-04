@@ -1,0 +1,46 @@
+{
+    "coord": {
+        "lon": -64.581,
+        "lat": -32.0771
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "algo de nubes",
+            "icon": "02n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 6.55,
+        "feels_like": 5.45,
+        "temp_min": 5.8,
+        "temp_max": 6.55,
+        "pressure": 1019,
+        "humidity": 10,
+        "sea_level": 1019,
+        "grnd_level": 943
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 1.73,
+        "deg": 269,
+        "gust": 1.71
+    },
+    "clouds": {
+        "all": 14
+    },
+    "dt": 1696411009,
+    "sys": {
+        "type": 2,
+        "id": 2034100,
+        "country": "AR",
+        "sunrise": 1696413137,
+        "sunset": 1696458104
+    },
+    "timezone": -10800,
+    "id": 3835943,
+    "name": "Santa Rosa de Calamuchita",
+    "cod": 200
+}
