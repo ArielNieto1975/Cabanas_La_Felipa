@@ -102,16 +102,15 @@ body {
   border-radius: 5px;
 }
 
-/* .temp, .humidity {
+.temp {
+  font-size: 1.5rem;
   color: #ffc000;
-  text-shadow: 0 0 5px #000000;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  line-height: 1;
-  margin-top: 5px;
-  margin-bottom: 5px;
-} */
+}
+
+#icon {
+  font-size: 2rem; 
+  color: white;
+}
 
 #menu,
 .bi-list {
