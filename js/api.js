@@ -18,6 +18,8 @@ async function getWeather() {
     console.log('Velocidad del viento: ' + Math.round(data.wind.speed) + ' km/h');
     console.log('Visibilidad: ' + data.visibility + ' m');
 
+
+    document.querySelector('.weather-icon').src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
     // document.querySelector('.city').innerHTML = data.name;
     document.querySelector('.temp').innerHTML = 'Temperatura actual: '+ Math.round(data.main.temp) + ' °C';
     // document.querySelector('.description').innerHTML = data.weather[0].description;
