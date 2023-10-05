@@ -16,6 +16,9 @@
     <!-- fin googleFont -->
     <title>Cabañas La Felipa</title>
     <link rel="icon" href="./assets/iconos/cabana.png" type="image/x-icon">
+    <!-- CDN weather-icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/erikflowers/weather-icons@master/css/weather-icons.min.css">
 </head>
 
 <body>
@@ -27,10 +30,18 @@
         <!-- Inicio navbar para pantallas anchas  -->
         <nav class="minav">
             <ul class="nav__menu1">
-                <img class="weather-icon" src="" alt="Icono del clima">
-                <li class="nav__menu__item1">
-                    <h6 class="temp"></h6>
-                    <h6 class="humidity"></h6></li>
+                <div class="clima-container">
+                    <div class="icon-container">
+                        <i class="wi wi-day-cloudy-windy" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <div class="temp-container">
+                        <li class="nav__menu__item1"><span class="temp" style="font-size: 1.5rem; color: rgb(234, 207, 55);"></span>
+                        </li>
+                    </div>
+                </div>
+                <!-- <img class="weather-icon" src="" alt="Icono del clima"> -->
+                <!-- <li class="nav__menu__item1"><h6 class="temp"></h6></li>  -->
+                <!-- <h6 class="humidity"></h6></li> -->
                 <li class="nav__menu__item1"><a href="./index.html">Home</a></li>
                 <li class="nav__menu__item1"><a href="./pages/cabanas.html">Cabañas</a></li>
                 <li class="nav__menu__item1"><a href="./pages/galeria.html">Galeria</a></li>
@@ -77,15 +88,21 @@
         <div class="banner2"></div>
 
         <section class="intro">
-          <div class="intro__img">
-            <img src="./assets/imgsect.jpeg" alt="imagen cabaña" />
-          </div>
-  
-          <p>Hace mucho tiempo atrás, habitaba en el encantador pueblo de La Cumbrecita, una mujer ilustre que se destacaba por su profunda conexión con la cultura criolla y su excepcional habilidad en el tejido con telar. Una gran artesana, guardiana de su cultura y tradición en la región.</p>
-          <p>Pero su fama no se debía sólo a ello. Su hogar, una histórica tapera contigua a una cancha de fútbol fue visitada habitualmente por los primeros pobladores del lugar, convirtiéndose en un punto de encuentro icónico. 
-            Es en honor a Doña Felipa, que las cabañas que ocupan su antigua tierra, llevan el nombre y reconocen la historia de quien ha dejado una huella indeleble en el corazón del pueblo.</p>
-          <p>Te invitamos a conocer y alojarte en el complejo de cabañas "La Felipa". 
-            Un proyecto familiar, destinado a recibir parejas que deseen disfrutar de una cálida y tranquila estadía, en el mágico y atractivo valle de las Sierras Grandes de Córdoba.</p>
+            <div class="intro__img">
+                <img src="./assets/imgsect.jpeg" alt="imagen cabaña" />
+            </div>
+
+            <p>Hace mucho tiempo atrás, habitaba en el encantador pueblo de La Cumbrecita, una mujer ilustre que se
+                destacaba por su profunda conexión con la cultura criolla y su excepcional habilidad en el tejido con
+                telar. Una gran artesana, guardiana de su cultura y tradición en la región.</p>
+            <p>Pero su fama no se debía sólo a ello. Su hogar, una histórica tapera contigua a una cancha de fútbol fue
+                visitada habitualmente por los primeros pobladores del lugar, convirtiéndose en un punto de encuentro
+                icónico.
+                Es en honor a Doña Felipa, que las cabañas que ocupan su antigua tierra, llevan el nombre y reconocen la
+                historia de quien ha dejado una huella indeleble en el corazón del pueblo.</p>
+            <p>Te invitamos a conocer y alojarte en el complejo de cabañas "La Felipa".
+                Un proyecto familiar, destinado a recibir parejas que deseen disfrutar de una cálida y tranquila
+                estadía, en el mágico y atractivo valle de las Sierras Grandes de Córdoba.</p>
         </section>
 
         <section class="opinion">
@@ -280,8 +297,8 @@
                 <img id="up" width="40" height="40" src="https://img.icons8.com/color/48/circled-up-2--v2.png"
                     alt="circled-up-2--v2" />
             </a>
-            <a href="https://api.whatsapp.com/send?phone=+541158220826&text=Hola, me contacto por las cabañas La Felipa. Mi nombre es " target="_blank"
-                rel="noreferrer">
+            <a href="https://api.whatsapp.com/send?phone=+541158220826&text=Hola, me contacto por las cabañas La Felipa. Mi nombre es "
+                target="_blank" rel="noreferrer">
                 <img src="https://cdn.iconscout.com/icon/free/png-512/whatsapp-circle-1868968-1583132.png"
                     alt="contactenos por whatsapp" width="50" height="50" />
             </a>

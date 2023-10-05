@@ -63,6 +63,23 @@ body {
   top: -1px;
   z-index: 2;
 }
+
+.clima-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center; 
+  margin-right: 10px;
+}
+
+.temp-container {
+  display: flex;
+  align-items: center; 
+  margin-left: 10px;
+}
 .nav__menu1 {
   display: flex;
   justify-content: space-evenly;
@@ -85,8 +102,7 @@ body {
   border-radius: 5px;
 }
 
-.temp, .humidity {
-  /* font-size: 1rem; */
+/* .temp, .humidity {
   color: #ffc000;
   text-shadow: 0 0 5px #000000;
   margin: 0;
@@ -95,7 +111,7 @@ body {
   line-height: 1;
   margin-top: 5px;
   margin-bottom: 5px;
-}
+} */
 
 #menu,
 .bi-list {
