@@ -305,7 +305,7 @@ body {
   text-shadow: 0 0 #000000;
   position: absolute;
   top: 100%;
-  transition: 0.5s all ease;
+  transition: 0.8s all ease;
   border: #000000 solid 2px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -333,7 +333,7 @@ body {
   text-align: justify;
   column-count: 2; 
   column-gap: 30px; 
-  list-style-type: none;
+  list-style: none;
   padding: 0; 
   line-height: 1.5;
   margin-top: 10px
@@ -389,6 +389,9 @@ body {
   .cabanas__card {
     width: 300px;
     height: 375px;
+  }
+  .cabana__info{
+    font-size: 13px;
   }
 }
 @media (max-width: 1024px) {
@@ -454,6 +457,13 @@ body {
   .ubicacion iframe{
     height: 250px;
   }
+  .servicios{
+    padding: 20px;
+  }
+  .servicios_list {
+    column-count: 1;
+    font-size: 14px;
+  }
 }
 @media (max-width: 425px) {
   .intro{
@@ -479,6 +489,10 @@ body {
     width: 80vw;
     height: 100vw;
   }
+  .cabana__info{
+    height: 25%;
+    font-size: 12px;
+  }
   .carousel-item {
     font-size: 12px;
   
@@ -489,5 +503,8 @@ body {
   }
   .copy{
     font-size: smaller;
+  }
+  .servicios_list {
+    font-size: 12px;
   }
 }
