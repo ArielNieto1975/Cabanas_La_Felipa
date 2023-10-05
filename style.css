@@ -85,6 +85,18 @@ body {
   border-radius: 5px;
 }
 
+.temp, .humidity {
+  /* font-size: 1rem; */
+  color: #ffc000;
+  text-shadow: 0 0 5px #000000;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 #menu,
 .bi-list {
   display: none;
