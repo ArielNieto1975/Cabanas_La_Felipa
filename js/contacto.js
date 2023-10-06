@@ -6,46 +6,53 @@ window.addEventListener("pageshow", () => {
 });
 
 function validarNombre(name) {
+    const nameError = document.getElementById("nameError");
     if (name === "") {
-        alert("Por favor, introduce tu nombre");
+        nameError.textContent = "Por favor, introduce tu nombre";
         return false;
     }
+    nameError.textContent = "";
     return true;
 }
 
 function validarEmail(email) {
+    const emailError = document.getElementById("emailError");
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-        alert("Por favor, introduce un correo electrónico válido");
+        emailError.textContent = "Por favor, introduce un correo electrónico válido";
         return false;
     }
+    emailError.textContent = "";
     return true;
 }
 
 function validarTelefono(telefono) {
+	const telefonoError = document.getElementById("telefonoError");
     const telefonoRegex = /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/;
     if (!telefonoRegex.test(telefono)) {
-        alert("Por favor, introduce un número de teléfono válido");
+        telefonoError.textContent = "Por favor, introduce un número de teléfono válido";
         return false;
     }
     return true;
 }
 
 function validarConsulta(consulta) {
+	const consultaError = document.getElementById("consultaError");
     if (consulta === "") {
-        alert("Por favor, introduce tu consulta");
+        consultaError.textContent = "Por favor, introduce tu consulta";
         return false;
     }
     return true;
 }
 
-function validarFormulario() {
+function validarFormulario(event) {
 	const name = document.getElementById("name").value.trim();
 	const email = document.getElementById("email").value.trim();
 	const telefono = document.getElementById("telefono").value.trim();
 	const consulta = document.getElementById("message").value.trim();
 	
 	if (!validarNombre(name) || !validarEmail(email) || !validarTelefono(telefono) || !validarConsulta(consulta)) {
+		event.preventDefault();
         return false;
     }
 

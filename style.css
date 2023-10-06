@@ -506,3 +506,7 @@ body {
     font-size: smaller;
   }
 }
+
+.error-message {
+  color: red;
+}
