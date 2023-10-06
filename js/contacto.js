@@ -27,8 +27,18 @@ document.getElementById("message").addEventListener("input", () => {
 
 function validarNombre(name) {
     const nameError = document.getElementById("nameError");
+
     if (name === "") {
         nameError.textContent = "Por favor, introduce tu nombre";
+        return false;
+    }
+    const nameRegex = /^[a-zA-Z\s]*$/;
+    if (!nameRegex.test(name)) {
+        nameError.textContent = "Por favor, introduce un nombre válido. Solo se permiten letras y espacios.";
+        return false;
+    }
+    if (name.length < 2 || name.length > 35) {
+        nameError.textContent = "Por favor, introduce un nombre válido. Debe tener entre 2 y 35 caracteres.";
         return false;
     }
     nameError.textContent = "";
@@ -38,6 +48,19 @@ function validarNombre(name) {
 function validarEmail(email) {
     const emailError = document.getElementById("emailError");
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    email = email.trim();
+
+    if (email === "") {
+        emailError.textContent = "Por favor, introduce tu correo electrónico";
+        return false;
+    }
+
+    if (email.length > 254) {
+        emailError.textContent = "Por favor, introduce un correo electrónico válido. No debe tener más de 254 caracteres.";
+        return false;
+    }
+
     if (!emailRegex.test(email)) {
         emailError.textContent = "Por favor, introduce un correo electrónico válido";
         return false;
@@ -49,10 +72,20 @@ function validarEmail(email) {
 function validarTelefono(telefono) {
 	const telefonoError = document.getElementById("telefonoError");
     const telefonoRegex = /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/;
+
+    telefono = telefono.trim();
+
+    if (telefono === "") {
+        telefonoError.textContent = "Por favor, introduce tu número de teléfono";
+        return false;
+    }
+
     if (!telefonoRegex.test(telefono)) {
         telefonoError.textContent = "Por favor, introduce un número de teléfono válido";
         return false;
     }
+
+    telefonoError.textContent = "";
     return true;
 }
 
@@ -62,6 +95,13 @@ function validarConsulta(consulta) {
         consultaError.textContent = "Por favor, introduce tu consulta";
         return false;
     }
+
+    if (consulta.length < 10 || consulta.length > 500) {
+        consultaError.textContent = "Por favor, introduce una consulta válida. Debe tener entre 10 y 500 caracteres.";
+        return false;
+    }
+
+    consultaError.textContent = "";
     return true;
 }
 
