@@ -3,6 +3,26 @@ window.addEventListener("pageshow", () => {
 	document.getElementById("email").value = "";
 	document.getElementById("telefono").value = "";
 	document.getElementById("message").value = "";
+    document.getElementById("nameError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+    document.getElementById("telefonoError").textContent = "";
+    document.getElementById("consultaError").textContent = "";
+});
+
+document.getElementById("name").addEventListener("input", () => {
+    document.getElementById("nameError").textContent = "";
+});
+
+document.getElementById("email").addEventListener("input", () => {
+    document.getElementById("emailError").textContent = "";
+});
+
+document.getElementById("telefono").addEventListener("input", () => {
+    document.getElementById("telefonoError").textContent = "";
+});
+
+document.getElementById("message").addEventListener("input", () => {
+    document.getElementById("consultaError").textContent = "";
 });
 
 function validarNombre(name) {
