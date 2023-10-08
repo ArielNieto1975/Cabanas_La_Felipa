@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+
 .gallery {
   width: 90%;
   margin: 55 auto;
@@ -21,6 +23,13 @@
   margin-top: 30px;
   letter-spacing: 3px;
 }
+
+@media (min-width: 0px) and (min-height: 450px) {
+  main {
+  height: 100vh;
+  }
+}
+
 @media (max-width: 1024px) {
   .gallery_title {
     font-size: 3.5vw;

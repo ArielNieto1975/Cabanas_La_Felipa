@@ -83,6 +83,12 @@
   box-shadow: 0 0 15px #00000080;
 }
 
+@media (min-width: 0px) and (min-height: 775px) {
+  main {
+  height: 100vh;
+  }
+}
+
 @media (max-width: 1650px) {
   .formulario {
     width: 80%;
