@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
-*/ /*  <== resuelve conflocto con bootstrap*/
+*/ /*  <== resuelve conflicto con bootstrap*/
 :root{
   width: 100vw;
 }
@@ -95,7 +95,6 @@ body {
 }
 
 .temp, .humidity {
-  /* font-size: 1rem; */
   color: var(--colorTitulosYSub);
   text-shadow: 0 0 5px var(--colorNegro);
   margin: 0;
