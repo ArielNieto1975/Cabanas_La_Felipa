@@ -13,7 +13,7 @@
     ],
     "base": "stations",
     "main": {
-        "temp": 21.72,
+        "temp": 15.72,
         "feels_like": 12.27,
         "temp_min": 11.24,
         "temp_max": 13.72,
