@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
-*/ /*  <== resuelve conflocto con bootstrap*/
+*/ /*  <== resuelve conflicto con bootstrap*/
 :root{
   width: 100vw;
 }
 body {
+  /* definimos variables de color (no funciona en root quizas por comflicto bootstrap) */
+  --colorPrincipal: #544e2a;
+  --colorTitulosYSub: #ffc000;
+  --colorMenuPie: #0c0b0b;
+  --colorMenuHover: #e20808;
+  --colorSection: #faf5ed;
+  --colorNegro: #000000;
+  --colorBlanco: 255, 255, 255;
+
   /* background-color: #304c5a; */
-  background-color: #544e2a;
+  background-color: var(--colorPrincipal);
 }
 .banner,
 .banner2 {
@@ -28,26 +37,26 @@ body {
 .banner__titulo {
   font-family: "Architects Daughter", cursive;
   font-size: 3.5vw;
-  color: #ffc000;
-  text-shadow: 0 0 5px #000000;
+  color: var(--colorTitulosYSub);
+  text-shadow: 0 0 5px var(--colorNegro);
   position: absolute;
 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff8;
+  background-color: rgba(var(--colorBlanco), 0.5);
   padding: 20px;
   border-radius: 10px;
 }
 .banner__titulo:hover {
-  background-color: #fffa;
+  background-color: rgba(var(--colorBlanco), 0.7);
   transition: 0.5s all ease;
 }
 .banner__subtitulo {
   font-family: "Anton", sans-serif;
   font-size: 3vw;
-  color: #ffc000;
-  text-shadow: 0 0 5px #000000;
+  color: var(--colorTitulosYSub);
+  text-shadow: 0 0 5px var(--colorNegro);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -55,7 +64,7 @@ body {
 }
 
 .header1 {
-  background-color: #0c0b0b;
+  background-color: var(--colorMenuPie);
   height: 55px;
   padding-top: 5px;
   /* fijamos el header para que no desaparezca al bajar en la pagina */
@@ -77,12 +86,23 @@ body {
   display: inline-block;
   text-decoration: none;
   font-size: 1.3rem;
-  color: #fff;
+  color: rgb(var(--colorBlanco));
   border: 1px solid transparent;
   outline: none;
 
   padding: 5px 0;
   border-radius: 5px;
+}
+
+.temp, .humidity {
+  color: var(--colorTitulosYSub);
+  text-shadow: 0 0 5px var(--colorNegro);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #menu,
@@ -91,11 +111,11 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-  color: #ffffff;
+  color: rgb(var(--colorBlanco));
 }
 
 .nav__menu__item1 a:hover {
-  color: #e20808;
+  color: var(--colorMenuHover);
   transition: 0.4s all;
 }
 .nav__menu__item1:hover .submenu1 {
@@ -109,36 +129,36 @@ body {
   display: none;
   font-family: "Architects Daughter", cursive;
   font-size: 5vw;
-  color: #ffc000;
+  color: var(--colorTitulosYSub);
   text-align: center;
   margin-top: 15px;
 }
 .nav__menu__resp1 {
   display: none;
   list-style: none;
-  background-color: #0c0b0b;
+  background-color: var(--colorMenuPie);
   text-align: center;
   height: 100vh;
 }
 .nav__menu__item1__resp {
-  border: 1px solid #e20808;
+  border: 1px solid var(--colorMenuHover);
   padding: 15px 0;
 }
 
 .nav__menu__item1__resp a {
   text-decoration: none;
   font-size: 1.8rem;
-  color: #fff;
+  color: rgb(var(--colorBlanco));
 }
 
 .nav__menu__item1__resp a:hover {
   display: block;
-  color: #e20808;
+  color: var(--colorMenuHover);
   transition: 0.4s all;
 }
 
 .contact {
-  background-color: #f8e42e;
+  background-color: var(--colorTitulosYSub);
   margin-top: 5px;
   height: 50%;
   padding: 2px 10px;
@@ -146,7 +166,7 @@ body {
 }
 
 .contact a {
-  color: #000000;
+  color: var(--colorNegro);
   padding: 0;
   font-size: 1.2rem;
 }
@@ -166,7 +186,7 @@ body {
 }
 #up {
   margin: 0 0 30px 10px;
-  filter: drop-shadow(0 0 2px #000);
+  filter: drop-shadow(0 0 2px var(--colorNegro));
 }
 #up:hover {
   filter: drop-shadow(2px 1px 10px #2f10dd);
@@ -174,14 +194,14 @@ body {
 }
 #localiza {
   margin: 0 0 25vh 10px;
-  filter: drop-shadow(0 0 10px #fff);
+  filter: drop-shadow(0 0 10px rgb(var(--colorBlanco)));
 }
 
 .intro {
   width: 90%;
   margin: 30px auto;
   padding: 40px;
-  background-color: #faf5ed;
+  background-color: var(--colorSection);
   overflow: hidden;
   border-radius: 5px;
 }
@@ -205,7 +225,7 @@ body {
   height: auto;
   margin: 50px auto;
   padding: 50px;
-  background-color: #faf5ed;
+  background-color: var(--colorSection);
   overflow: hidden;
   border-radius: 5px;
 }
@@ -248,7 +268,7 @@ body {
 
 }
 .califica svg{
-  filter: drop-shadow(0 0 1px #000) ;
+  filter: drop-shadow(0 0 1px var(--colorNegro)) ;
 }
 
 
@@ -285,16 +305,16 @@ body {
 .cabana__info {
   width: 100%;
   height: 20%;
-  background-color: #ffffffe1;
+  background-color: rgba(var(--colorBlanco), 0.85);
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: 0 0 #000000;
+  text-shadow: 0 0 var(--colorNegro);
   position: absolute;
   top: 100%;
-  transition: 0.5s all ease;
-  border: #000000 solid 2px;
+  transition: 0.8s all ease;
+  border: var(--colorNegro) solid 2px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -321,7 +341,7 @@ body {
   text-align: justify;
   column-count: 2; 
   column-gap: 30px; 
-  list-style-type: none;
+  list-style: none;
   padding: 0; 
   line-height: 1.5;
   margin-top: 10px
@@ -342,12 +362,12 @@ body {
   display: flex;
 }
 .ubicacion iframe {
-  box-shadow: 0 0 15px grey;
+  box-shadow: 0 0 15px #808080;
   border-radius: 5px;
 }
 
 .footer {
-  background-color: #0c0b0b;
+  background-color: var(--colorMenuPie);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -361,7 +381,7 @@ body {
 }
 
 .redes svg:hover {
-  fill: white;
+  fill: rgb(var(--colorBlanco));
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -377,6 +397,9 @@ body {
   .cabanas__card {
     width: 300px;
     height: 375px;
+  }
+  .cabana__info{
+    font-size: 13px;
   }
 }
 @media (max-width: 1024px) {
@@ -442,6 +465,13 @@ body {
   .ubicacion iframe{
     height: 250px;
   }
+  .servicios{
+    padding: 20px;
+  }
+  .servicios_list {
+    column-count: 1;
+    font-size: 14px;
+  }
 }
 @media (max-width: 425px) {
   .intro{
@@ -467,6 +497,10 @@ body {
     width: 80vw;
     height: 100vw;
   }
+  .cabana__info{
+    height: 25%;
+    font-size: 12px;
+  }
   .carousel-item {
     font-size: 12px;
   
@@ -477,5 +511,8 @@ body {
   }
   .copy{
     font-size: smaller;
+  }
+  .servicios_list {
+    font-size: 12px;
   }
 }
