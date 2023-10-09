@@ -242,7 +242,7 @@ body {
   filter: drop-shadow(2px 1px 10px #2f10dd);
   transform: scale(1.1);
 }
-#localiza {
+#localiza img{
   margin: 0 0 25vh 5px;
   filter: drop-shadow(0 0 10px rgb(var(--colorBlanco)));
 }
