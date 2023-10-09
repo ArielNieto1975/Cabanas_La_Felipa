@@ -72,6 +72,23 @@ body {
   top: -1px;
   z-index: 2;
 }
+
+.clima-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center; 
+  margin-right: 10px;
+}
+
+.temp-container {
+  display: flex;
+  align-items: center; 
+  margin-left: 10px;
+}
 .nav__menu1 {
   display: flex;
   justify-content: space-evenly;
@@ -140,18 +157,14 @@ body {
   }
 }
 
-
-
-
-.temp, .humidity {
+.temp {
+  font-size: 1.5rem;
   color: var(--colorTitulosYSub);
-  text-shadow: 0 0 5px var(--colorNegro);
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  line-height: 1;
-  margin-top: 5px;
-  margin-bottom: 5px;
+}
+
+#icon {
+  font-size: 2rem; 
+  color: white;
 }
 
 #menu,
@@ -570,4 +583,8 @@ body {
   .servicios_list {
     font-size: 12px;
   }
+}
+
+.error-message {
+  color: red;
 }

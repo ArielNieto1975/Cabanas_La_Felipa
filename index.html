@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Disfruta de una estadía inolvidable en La Felipa, un hermoso complejo de cabañas, ubicado en la localidad de La Cumbrecita, en Córdoba, Argentina. Rodeado de naturaleza, ofrece comodidad, tranquilidad y acceso a increíbles senderos de las sierras. ¡Reserva ahora y vive una experiencia única en La Felipa!">
-    <meta name="keywords" content="alquiler, cabañas, La Felipa, La Cumbrecita, Córdoba, Argentina, naturaleza, tranquilidad, sierras, descanso, turismo, ">
+    <meta name="description"
+        content="Disfruta de una estadía inolvidable en La Felipa, un hermoso complejo de cabañas, ubicado en la localidad de La Cumbrecita, en Córdoba, Argentina. Rodeado de naturaleza, ofrece comodidad, tranquilidad y acceso a increíbles senderos de las sierras. ¡Reserva ahora y vive una experiencia única en La Felipa!">
+    <meta name="keywords"
+        content="alquiler, cabañas, La Felipa, La Cumbrecita, Córdoba, Argentina, naturaleza, tranquilidad, sierras, descanso, turismo, ">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -18,6 +20,9 @@
     <!-- fin googleFont -->
     <title>Cabañas La Felipa</title>
     <link rel="icon" href="./assets/iconos/cabana.png" type="image/x-icon">
+    <!-- CDN weather-icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/erikflowers/weather-icons@master/css/weather-icons.min.css">
 </head>
 
 <body>
@@ -29,11 +34,20 @@
         <!-- Inicio navbar para pantallas anchas  -->
         <nav class="minav">
             <ul class="nav__menu1">
+                <div class="clima-container">
+                    <div class="icon-container">
+                        <i id="icon" title="Clima en La Cumbrecita"></i>
+                    </div>
+                    <div class="temp-container">
+                        <li class="nav__menu__item1"><span class="temp"></span>
+                        </li>
+                    </div>
+                </div>
                 <li class="nav__menu__item1"><a href="./index.html" class="a1">Home</a></li>
                 <li class="nav__menu__item1"><a href="./pages/cabanas.html" class="a2">Cabañas</a></li>
                 <li class="nav__menu__item1"><a href="./pages/galeria.html" class="a3">Galeria</a></li>
                 <li class="nav__menu__item1"><a href="./pages/tarifas.html" class="a4">Tarifas</a></li>
-                <li class="nav__menu__item1 contact"><a href="./pages/contacto.html" >Contacto</a></li>
+                <li class="nav__menu__item1 contact"><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
         <!-- Fin navbar para pantallas anchas  -->
@@ -75,15 +89,22 @@
         <div class="banner2"></div>
 
         <section class="intro">
-          <div class="intro__img">
-            <img src="./assets/imgsect.jpeg" alt="imagen cabaña en La Felipa" />
-          </div>
-  
-          <p class="intro__capital">Hace mucho tiempo atrás, habitaba en el encantador pueblo de La Cumbrecita, una mujer ilustre que se destacaba por su profunda conexión con la cultura criolla y su excepcional habilidad en el tejido con telar. Una gran artesana, guardiana de su cultura y tradición en la región.</p>
-          <p>Pero su fama no se debía sólo a ello. Su hogar, una histórica tapera contigua a una cancha de fútbol fue visitada habitualmente por los primeros pobladores del lugar, convirtiéndose en un punto de encuentro icónico. 
-            Es en honor a Doña Felipa, que las cabañas que ocupan su antigua tierra, llevan el nombre y reconocen la historia de quien ha dejado una huella indeleble en el corazón del pueblo.</p>
-          <p>Te invitamos a conocer y alojarte en el complejo de cabañas "La Felipa". 
-            Un proyecto familiar, destinado a recibir parejas que deseen disfrutar de una cálida y tranquila estadía, en el mágico y atractivo valle de las Sierras Grandes de Córdoba.</p>
+            <div class="intro__img">
+                <img src="./assets/imgsect.jpeg" alt="imagen cabaña en La Felipa" />
+            </div>
+
+            <p class="intro__capital">Hace mucho tiempo atrás, habitaba en el encantador pueblo de La Cumbrecita, una
+                mujer ilustre que se destacaba por su profunda conexión con la cultura criolla y su excepcional
+                habilidad en el tejido con telar. Una gran artesana, guardiana de su cultura y tradición en la región.
+            </p>
+            <p>Pero su fama no se debía sólo a ello. Su hogar, una histórica tapera contigua a una cancha de fútbol fue
+                visitada habitualmente por los primeros pobladores del lugar, convirtiéndose en un punto de encuentro
+                icónico.
+                Es en honor a Doña Felipa, que las cabañas que ocupan su antigua tierra, llevan el nombre y reconocen la
+                historia de quien ha dejado una huella indeleble en el corazón del pueblo.</p>
+            <p>Te invitamos a conocer y alojarte en el complejo de cabañas "La Felipa".
+                Un proyecto familiar, destinado a recibir parejas que deseen disfrutar de una cálida y tranquila
+                estadía, en el mágico y atractivo valle de las Sierras Grandes de Córdoba.</p>
         </section>
 
         <section class="opinion">
@@ -278,8 +299,8 @@
                 <img id="up" width="40" height="40" src="https://img.icons8.com/color/48/circled-up-2--v2.png"
                     alt="flecha para arriba" />
             </a>
-            <a href="https://api.whatsapp.com/send?phone=+541158220826&text=Hola, me contacto por las cabañas La Felipa. Mi nombre es " target="_blank"
-                rel="noreferrer">
+            <a href="https://api.whatsapp.com/send?phone=+541158220826&text=Hola, me contacto por las cabañas La Felipa. Mi nombre es "
+                target="_blank" rel="noreferrer">
                 <img src="https://cdn.iconscout.com/icon/free/png-512/whatsapp-circle-1868968-1583132.png"
                     alt="logo whatsapp" width="50" height="50" />
             </a>
