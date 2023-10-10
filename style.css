@@ -248,15 +248,15 @@ body {
   transform: scale(1.1);
 }
 #up {
-  margin: 0 0 30px 10px;
+  margin: 0 0 30px 5px;
   filter: drop-shadow(0 0 2px var(--colorNegro));
 }
 #up:hover {
   filter: drop-shadow(2px 1px 10px #2f10dd);
   transform: scale(1.1);
 }
-#localiza {
-  margin: 0 0 25vh 10px;
+#localiza img{
+  margin: 0 0 25vh 5px;
   filter: drop-shadow(0 0 10px rgb(var(--colorBlanco)));
 }
 
@@ -266,18 +266,21 @@ body {
   padding: 40px;
   background-color: var(--colorSection);
   overflow: hidden;
+  text-align: justify;
   border-radius: 5px;
+  /* box-shadow: 0 0 15px var(--colorTitulosYSub); */
 }
 .intro__img {
   max-height: 300px;
 }
-.intro img {
+.intro__img img {
   width: 40%;
   min-width: 300px;
   min-height: 180px;
   height: 40%;
   float: left;
-  padding: 0 50px 10px 0;
+  margin: 0 50px 10px 0;
+  border-radius: 5px;
 }
 .intro__capital:first-letter{
     text-transform: uppercase;
@@ -296,6 +299,7 @@ body {
   background-color: var(--colorSection);
   overflow: hidden;
   border-radius: 5px;
+  /* box-shadow: 0 0 15px var(--colorTitulosYSub); */
 }
 
 .opinion__title{
@@ -356,14 +360,10 @@ body {
 .cabanas__card {
   width: 400px;
   height: 500px;
-
+  box-shadow: 0 0 15px var(--colorNegro);
   overflow: hidden;
   position: relative;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 .cabanas__card img {
   width: 100%;
@@ -384,10 +384,6 @@ body {
   transition: 0.8s all ease;
   border: var(--colorNegro) solid 2px;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 .cabana__info p {
   display: inline-block;
