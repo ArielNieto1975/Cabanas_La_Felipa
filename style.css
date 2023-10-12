@@ -430,6 +430,7 @@ body {
   border-radius: 5px;
 }
 
+
 .footer {
   background-color: var(--colorMenuPie);
   padding: 20px;
@@ -536,6 +537,7 @@ body {
     column-count: 1;
     font-size: 14px;
   }
+
 }
 @media (max-width: 425px) {
   .intro{
