@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+main{
+  min-height: calc(100vh - 190px);
+}
 
 .gallery {
   width: 90%;
@@ -23,11 +25,12 @@
   margin-top: 30px;
   letter-spacing: 3px;
 }
-
-@media (min-width: 0px) and (min-height: 450px) {
-  main {
-    margin-bottom: 5%;
-  }
+.tarifas{
+  text-align: justify;
+}
+th{
+  background-color: var(--colorPrincipal);
+  color: var(--colorTitulosYSub);;
 }
 
 @media (max-width: 1024px) {
@@ -36,12 +39,24 @@
   }
 }
 @media (max-width: 768px) {
+  .gallery{
+    padding: 50px 20px;
+  }
   .gallery_title {
     font-size: 4vw;
   }
-  @media (max-width: 600px) {
-    .gallery_title {
-      font-size: 7vw;
-    }
 }
+@media (max-width: 600px) {
+  .gallery{
+    font-size: 12px;
+  }
+  .gallery_title {
+    font-size: 7vw;
+  }
+}
+@media (max-width: 430px){
+  .gallery{
+    font-size: 10px;
+    margin: 30px auto;
+  }
 }

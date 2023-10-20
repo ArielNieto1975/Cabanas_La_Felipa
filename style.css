@@ -24,7 +24,7 @@ body {
   ); /* asignamos al banner un alto del 100% del alto de la pantalla menos la barra del header */
   width: 100%;
   background-size: cover;
-  background-image: url("./assets/banner.jpeg");
+  background-image: url("./assets/banner.webp");
   background-position: center;
 }
 .banner {
