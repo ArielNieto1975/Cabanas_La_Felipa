@@ -15,8 +15,7 @@
   position: absolute;
   bottom: 5%;
   left: 50%;
-  transform: translate(-50%, -50%)
-  
+  transform: translate(-50%, -50%)  
 }
 .formulario {
   width: 60vw;
@@ -25,15 +24,14 @@
   padding: 40px 100px;
   border-radius: 5px;
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column;  
   background-color: var(--colorSection);
   box-shadow: 0 0 10px #808080;
   border: 1px solid #ffdf9b;
-}
-.formulario h3 {
-  text-align: center;
-  margin: 10px auto 40px;
+  & h3 {
+    text-align: center;
+    margin: 10px auto 40px;
+  }
 }
 .formulario__form {
   display: flex;
@@ -42,24 +40,23 @@
 }
 .formulario__form-item {
   text-align: left;
-  
-}
-.formulario__form-item input {
-  display: inline-block;
-  padding-left: 5px;
-  font-size: 1em;
-  width: 100%;
-  height: 40px;
-  border: none;
-  border-bottom: 1px solid #555;
-  outline: none;
+  & input {
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #555;
+    outline: none;
+  }
+  & label {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
 }
 #consulta {
   font-size: 1em;
-}
-.formulario__form-item label {
-  display: inline-block;
-  margin-bottom: 5px;
 }
 
 .form-ta {
@@ -68,10 +65,10 @@
   flex-direction: column;
   text-align: initial;
   gap: 10px;
-}
-.form-ta textarea {
-  padding: 10px;
-  outline: none;
+  & textarea {
+    padding: 10px;
+    outline: none;
+  }
 }
 .form-ta textarea:hover, .formulario__form-item input:hover {
   box-shadow: 0 0 10px #555;
@@ -88,14 +85,15 @@
   background-color: var(--colorPrincipal);
   letter-spacing: 1.5px;
   color: var(--colorSection);
+  &:hover {
+    background-color: var(--colorSection);
+    color: var(--colorPrincipal);
+    border: 1px solid var(--colorPrincipal);
+    font-weight: bold;
+    box-shadow: 0 0 15px #00000080;
+  }
 }
-.enviar:hover {
-  background-color: var(--colorSection);
-  color: var(--colorPrincipal);
-  border: 1px solid var(--colorPrincipal);
-  font-weight: bold;
-  box-shadow: 0 0 15px #00000080;
-}
+
 
 @media (max-width: 1650px) {
   .formulario {
