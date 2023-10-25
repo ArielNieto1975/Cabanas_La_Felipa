@@ -48,10 +48,10 @@ body {
   background-color: rgba(var(--colorBlanco), 0.7);
   padding: 20px;
   border-radius: 10px;
-  &:hover {
-    background-color: rgba(var(--colorBlanco), 0.9);
-    transition: 0.5s all ease;
-  }
+}
+.banner__titulo:hover {
+  background-color: rgba(var(--colorBlanco), 0.9);
+  transition: 0.5s all ease;
 }
 
 .banner__subtitulo {
@@ -96,21 +96,23 @@ body {
 }
 .nav__menu__item1 {
   list-style: none;
-  & a {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 1.3rem;
-    color: rgb(var(--colorBlanco));
-    border: 1px solid transparent;
-    outline: none;  
-    padding: 5px 0;
-    border-radius: 5px;
-    &:hover {
-      color: var(--colorMenuHover);
-      transition: 0.4s all;
-    }
-  }
 }
+.nav__menu__item1 a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: rgb(var(--colorBlanco));
+  border: 1px solid transparent;
+  outline: none;  
+  padding: 5px 0;
+  border-radius: 5px;
+}
+.nav__menu__item1 a:hover {
+  color: var(--colorMenuHover);
+  transition: 0.4s all;
+}
+  
+
 
 .contact {
   background-color: var(--colorTitulosYSub);
@@ -119,12 +121,13 @@ body {
   height: 50%;
   padding: 2px 10px;
   border-radius: 50px;
-  & a {
-    color: var(--colorNegro);
-    padding: 0;
-    font-size: 1.2rem;
-  }
 }
+.contact a {
+  color: var(--colorNegro);
+  padding: 0;
+  font-size: 1.2rem;
+}
+
 
 /* inicio animacion menu */
 .a1, .a2, .a3, .a4{
@@ -196,16 +199,16 @@ body {
 .nav__menu__item1__resp {
   border: 1px solid var(--colorMenuHover);
   padding: 15px 0;
-  & a {
-    text-decoration: none;
-    font-size: 1.8rem;
-    color: rgb(var(--colorBlanco));
-    &:hover {
-      display: block;
-      color: var(--colorMenuHover);
-      transition: 0.4s all;
-    }
-  }
+}
+.nav__menu__item1__resp a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: rgb(var(--colorBlanco));
+}
+.nav__menu__item1__resp a:hover {
+  display: block;
+  color: var(--colorMenuHover);
+  transition: 0.4s all;
 }
 
 .whats {
@@ -217,20 +220,22 @@ body {
   z-index: 3;
   display: flex;
   flex-direction: column;
-  & a img:hover {
-    filter: drop-shadow(2px 1px 10px #37f337);
-    transform: scale(1.1);
-  }
 }
+.whats a img:hover {
+  filter: drop-shadow(2px 1px 10px #37f337);
+  transform: scale(1.1);
+}
+
 
 #up {
   margin: 0 0 30px 5px;
   filter: drop-shadow(0 0 2px var(--colorNegro));
-  &:hover {
-    filter: drop-shadow(2px 1px 10px #ffdf9b);
-    transform: scale(1.1);
-  }
 }
+#up:hover {
+  filter: drop-shadow(2px 1px 10px #ffdf9b);
+  transform: scale(1.1);
+}
+
 #localiza img{
   margin: 0 0 25vh 5px;
   filter: drop-shadow(0 0 10px rgb(var(--colorBlanco)));
@@ -248,16 +253,17 @@ body {
 }
 .intro__img {
   max-height: 300px;
-  & img {
-    width: 40%;
-    min-width: 300px;
-    min-height: 180px;
-    height: 40%;
-    float: left;
-    margin: 0 50px 10px 0;
-    border-radius: 5px;
-  }
 }
+.intro__img img {
+  width: 40%;
+  min-width: 300px;
+  min-height: 180px;
+  height: 40%;
+  float: left;
+  margin: 0 50px 10px 0;
+  border-radius: 5px;
+}
+
 .intro__capital:first-letter{
     text-transform: uppercase;
     font-size: 30px;
@@ -301,26 +307,26 @@ body {
   width: 60%;
   height: 110px;
   margin: 0;
-  &  p{
-    width: 100%;
-    text-align: center;
-  }
+}
+.carousel-item  p{
+  width: 100%;
+  text-align: center;
 }
 .califica{
   display: flex;
   justify-content: center;
   gap: 5px;
-  & svg{
-    filter: drop-shadow(0 0 1px var(--colorNegro)) ;
-  }
+}
+.califica svg{
+  filter: drop-shadow(0 0 1px var(--colorNegro)) ;
 }
 
 .ubicacion {
   display: flex;
-  &  iframe {
-    box-shadow: 0 0 15px #808080;
-    border-radius: 5px;
-  }
+}
+.ubicacion  iframe {
+  box-shadow: 0 0 15px #808080;
+  border-radius: 5px;
 }
 
 .cabanas__container {
@@ -342,11 +348,11 @@ body {
   overflow: hidden;
   position: relative;
   border-radius: 5px;
-   & img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+}
+.cabanas__card img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
 }
 
 .cabana__info {
@@ -363,11 +369,11 @@ body {
   transition: 0.8s all ease;
   border: var(--colorNegro) solid 2px;
   border-radius: 5px;
-  & p {
-    display: inline-block;
-    padding: 5px;
-    margin: 0 10px;
-  }
+}
+.cabana__info p {
+  display: inline-block;
+  padding: 5px;
+  margin: 0 10px;
 }
 
 .cabanas__card img:hover ~ .cabana__info,
@@ -388,15 +394,15 @@ body {
   padding: 0; 
   line-height: 1.5;
   margin-top: 10px;
-  & li {
-    margin-bottom: 10px; 
-    display: flex; 
-    align-items: center; 
-    & img {
-      vertical-align: middle; 
-      margin-right: 10px; 
-    }
-  }
+}
+.servicios_list li {
+  margin-bottom: 10px; 
+  display: flex; 
+  align-items: center; 
+}
+.servicios_list li img {
+  vertical-align: middle; 
+  margin-right: 10px; 
 }
 
 .footer {
@@ -411,11 +417,11 @@ body {
   display: flex;
   gap: 30px;
   justify-content: center;
-  & svg:hover {
-    fill: rgb(var(--colorBlanco));
-    transform: scale(1.1);
-    cursor: pointer;
-  }
+}
+.redes svg:hover {
+  fill: rgb(var(--colorBlanco));
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .copy {
@@ -493,10 +499,10 @@ body {
   }
   .ubicacion{
     padding: 20px;  
-    & iframe{
-      height: 250px;
-    }  
   }
+  .ubicacion iframe{
+    height: 250px;
+  }  
   .servicios{
     padding: 20px;
   }
