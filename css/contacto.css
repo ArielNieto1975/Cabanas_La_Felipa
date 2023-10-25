@@ -26,8 +26,6 @@
   display: flex;
   flex-direction: column;  
   background-color: var(--colorSection);
-  box-shadow: 0 0 10px #808080;
-  border: 1px solid #ffdf9b;
   & h3 {
     text-align: center;
     margin: 10px auto 40px;
